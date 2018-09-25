@@ -1,0 +1,10 @@
+  <div id="scandit-barcode-picker" [class.scanning]="scanning">
+    <span (click)="cancelScanning()" id="cancelscan" ><i class="material-icons" >cancel</i></span>
+  </div>
+  <div class="input-group mb-3">
+    <input id="scan-input" [(ngModel)]="inputValue" type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <span id="scan" (click)="scan()"class="input-group-text" id="basic-addon2"><i class="material-icons" style="color: gray">photo_camera</i></span>
+    </div>
+  </div>
+

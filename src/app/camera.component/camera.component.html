@@ -1,0 +1,13 @@
+<div id="app">
+    <label style="width:100%">Klik op de knop om een afbeelding te maken! </label>
+    <label class="cameraButton btn btn-default btn-sm" >
+        <i class="material-icons" style="color: gray">add_a_photo</i>
+      <input type="file" id="input" (change)="onFileChanged($event)" [(ngModel)]="value" accept="image/*" capture="camera" />
+  </label>
+</div>
+<div class="images" id="images">
+  <app-display *ngFor="let new of selectedFiles" [file]="new"></app-display>
+</div>
+
+
+

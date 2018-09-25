@@ -1,0 +1,47 @@
+label.cameraButton {
+  display: inline-block;
+  margin: 1em 0;
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  padding: 0.5em;
+  color: #333;
+  border: 2px solid #666;
+  background-color: #fff;
+  Border-color: #ccc;
+}
+
+label.cameraButton:active {
+  border-color: #CCC #EEE #EEE #CCC;
+}
+
+label.cameraButton input[capture*="camera"] {
+  display: none;
+}
+
+.imagebox:active {
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+img.thumb:active {
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+#outputbox {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  margin: auto;
+}
+
+#outputbox>output {
+  background-color: rgba(255, 0, 0, 0.664);
+  width: 20%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+div {
+  height: 100%;
+  width: 100%;
+}

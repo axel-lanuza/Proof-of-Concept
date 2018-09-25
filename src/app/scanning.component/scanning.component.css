@@ -1,0 +1,70 @@
+@media (max-width: 400px){
+  #scandit-barcode-picker {
+    width: 75%;
+  }
+}
+
+@media (min-width: 401px){
+  #scandit-barcode-picker {
+    width: 90%;
+  }
+}
+
+#scandit-barcode-picker {
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  margin-top: 5%;
+  overflow: visible;
+
+}
+
+#scandit-barcode-picker.scanning {
+  z-index: 1;
+}
+
+#scan-input:focus,
+#scan-input:hover,
+#input-container:hover #scan-input {
+  outline: none;
+  border-color: #2EC1CE;
+}
+
+#input-container {
+  text-align: center;
+}
+
+#cancelscan{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 1000;
+}
+
+.scandit scandit-barcode-picker {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 500px;
+  max-height: 375px;
+}
+
+.scandit video {
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

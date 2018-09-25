@@ -1,0 +1,84 @@
+body {
+  background-color: #F0F0F0;
+  min-width:100%;
+}
+
+#app {
+  text-align: center;
+  color: #2c3e50;
+}
+
+#video {
+  background-color: #000000;
+  width: 75%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+#canvas {
+  display: none;
+  width: 100%;
+}
+
+li {
+  display: inline;
+  padding: 5px;
+}
+
+.imagebox {
+  margin-left: 20px;
+}
+
+img.thumb:active {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.imagecontainer {
+  width: 150px;
+  height: 150px;
+  cursor: move;
+  border:1px solid black;
+  display:inline-block;
+  margin: 25px;
+  text-align: center;
+
+}
+.images{
+  width: 150px;
+  height: 100%;
+  text-align: center;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
+}
+.container-fluid{
+  text-align: center;
+}
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: #4e4;
+}
